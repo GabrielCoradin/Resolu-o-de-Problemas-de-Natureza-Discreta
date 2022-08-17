@@ -157,7 +157,4 @@ for l in range(len(matriz1)):
                 print("\n Cartesiano: "
                 "\n Conjunto 1: {", ','.join(conjC1_1), "}" 
                 "\n Conjunto 2: {", ','.join(conjC2_1), "}" 
-                "\n Resultado: {", "(", ');('.join(cartesiano), ")", "}")  #comando .join para retira "[]" e adicionar ");("
-                
-            else:
-                print('ERRO')
+                "\n Resultado: {", "("+ ');('.join(cartesiano)+ ")", "}")  #comando .join para retira "[]" e adicionar ");("

@@ -1,5 +1,5 @@
 #ler arquivo
-arquivo = open("tarefa-1.txt", "r")
+arquivo = open("tarefa-1_1.txt", "r")
 #manipulacoes para colocar em matriz
 vet1 = []
 matriz1 = []
@@ -48,10 +48,10 @@ for l in range(len(matriz1)):
                     retirar_virgula = lista.replace(",","")
                     uniaofinal.append(retirar_virgula)
 
-                print("\n Uniao: "
-                "\n Conjunto 1: {", ','.join(conjU1_1), "}"
-                "\n Conjunto 2: {", ','.join(conjU2_1), "}" 
-                "\n Resultado: {", ','.join(uniaofinal), "}") #comando .join para retira "[]" e adicionar ","
+                print("Uniao: "
+                "Conjunto 1: {", ','.join(conjU1_1), "}",
+                "Conjunto 2: {", ','.join(conjU2_1), "}", 
+                "Resultado: {", ','.join(uniaofinal), "}") #comando .join para retira "[]" e adicionar ","
 
             #identificar intersecao
             elif calculo == 'I':
@@ -85,10 +85,10 @@ for l in range(len(matriz1)):
                     retirar_virgula = lista.replace(",","")
                     intersfinal.append(retirar_virgula)
 
-                print("\n Interseção: "
-                "\n Conjunto 1: {", ','.join(conjI1_1), "}" 
-                "\n Conjunto 2: {", ','.join(conjI2_1), "}" 
-                "\n Resultado: {", ','.join(intersfinal), "}")   #comando .join para retira "[]" e adicionar ","
+                print("Interseção: "
+                "Conjunto 1: {", ','.join(conjI1_1), "}",
+                "Conjunto 2: {", ','.join(conjI2_1), "}",
+                "Resultado: {", ','.join(intersfinal), "}")   #comando .join para retira "[]" e adicionar ","
 
             #identificar diferenca
             elif calculo == 'D':
@@ -122,10 +122,10 @@ for l in range(len(matriz1)):
                     retirar_virgula = lista.replace(",","")
                     diferencafinal.append(retirar_virgula)        
 
-                print("\n Diferença: "
-                "\n Conjunto 1: {", ','.join(conjD1_1), "}" 
-                "\n Conjunto 2: {", ','.join(conjD2_1), "}" 
-                "\n Resultado: {", ','.join(diferencafinal), "}")   #comando .join para retira "[]" e adicionar ","
+                print("Diferença: "
+                "Conjunto 1: {", ','.join(conjD1_1), "}", 
+                "Conjunto 2: {", ','.join(conjD2_1), "}", 
+                "Resultado: {", ','.join(diferencafinal), "}")   #comando .join para retira "[]" e adicionar ","
 
             #identificar cartesiano
             elif calculo == 'C':
@@ -154,7 +154,7 @@ for l in range(len(matriz1)):
                         if (x+y) not in cartesiano:
                             cartesiano.append(x+y)          
                 
-                print("\n Cartesiano: "
-                "\n Conjunto 1: {", ','.join(conjC1_1), "}" 
-                "\n Conjunto 2: {", ','.join(conjC2_1), "}" 
-                "\n Resultado: {", "("+ ');('.join(cartesiano)+ ")", "}")  #comando .join para retira "[]" e adicionar ");("
+                print("Cartesiano: "
+                "Conjunto 1: {", ','.join(conjC1_1), "}", 
+                "Conjunto 2: {", ','.join(conjC2_1), "}", 
+                "Resultado: {", "("+ ');('.join(cartesiano)+ ")", "}")  #comando .join para retira "[]" e adicionar ");("
